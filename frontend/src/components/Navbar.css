@@ -1,0 +1,38 @@
+/* Navbar.css */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Dark grey background */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    box-sizing: border-box; /* Ensure padding doesn't affect layout */
+  }
+  
+  .navbar-left {
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-grow: 0; /* Ensures the left side doesn't grow */
+  }
+  
+  .admin-button {
+    background-color: #f0f0f0; /* Light grey button background */
+    color: #333; /* Dark grey text */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 20px; /* Space between "Car-Workshop" and button */
+  }
+  
+  .admin-button:hover {
+    background-color: #e0e0e0; /* Slightly darker grey on hover */
+  }
+  
