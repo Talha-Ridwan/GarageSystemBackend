@@ -17,7 +17,7 @@ class Appointment(models.Model):
     customer_name = models.CharField(max_length=50)
     phone_number = PhoneNumberField(null=False, region="BD")
     appointment_date = models.DateTimeField()
-    registration = models.PositiveBigIntegerField(max_length=100)
+    registration = models.CharField(max_length=100)
 
     def clean(self):
         # Filter appointments for the same mechanic and date
